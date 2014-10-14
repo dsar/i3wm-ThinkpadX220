@@ -17,4 +17,11 @@ feh --bg-scale ~/.config/background.jpg
 # execute i3 window manager
 exec i3
 ```
+~/.i3/config
+================
+configuration for i3 window manager
+
+/etc/i3status.conf
+================
+configuration for i3 status bar
 
