@@ -97,7 +97,10 @@ bindsym XF86AudioMute exec amixer -q -D pulse set Master 1+ toggle
 # brightness control, backlight, xbacklight
 bindsym XF86MonBrightnessDown  exec  xbacklight -dec 5
 bindsym XF86MonBrightnessUp  exec  xbacklight -inc 5
-bindsym Print                  exec  scrot
+
+# printscreen - screenshot
+bindsym Print exec scrot -u '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots/'
+#bindsym Shift+Print exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots/'
 
 # switch to workspace
 bindsym $mod+1 workspace 1: main
