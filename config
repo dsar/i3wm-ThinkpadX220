@@ -100,7 +100,7 @@ bindsym XF86MonBrightnessUp  exec  xbacklight -inc 5
 
 # printscreen - screenshot
 bindsym Print exec scrot -u '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots/'
-#bindsym Shift+Print exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots/'
+bindsym --release Shift+Print exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots/'
 
 # switch to workspace
 bindsym $mod+1 workspace 1: main
